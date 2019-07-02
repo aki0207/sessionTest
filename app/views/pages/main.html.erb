@@ -1,0 +1,14 @@
+<h1>seesionTest</h1>
+<%= label_tag :"#{session[:sessionContent]}" %>
+<%= form_tag('regist', method: :post) do %>
+    <%= submit_tag "生成" %>
+<% end %>
+
+<%= form_tag('delete', method: :post) do %>
+    <%= submit_tag "削除" %>
+<% end %>
+
+<%= form_tag('move', method: :post) do %>
+    <%= submit_tag "移動" %>
+<% end %>
+
